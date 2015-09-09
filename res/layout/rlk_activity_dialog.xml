@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:background="#FFEEEE"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dialog_padding_24"
+            android:text="TextView"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+	        android:paddingLeft="@dimen/dialog_padding_16"
+	        android:paddingRight="@dimen/dialog_padding_16"
+	        android:paddingBottom="@dimen/dialog_padding_16"
+            >
+            <Button
+                android:id="@+id/dialog_ok"
+                android:layout_width="@dimen/dialog_button_width"
+                android:layout_height="@dimen/dialog_button_height"
+                android:paddingLeft="@dimen/dialog_button_magin"
+                android:paddingRight="@dimen/dialog_button_magin"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="OK"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/dialog_cancel"
+                android:layout_width="@dimen/dialog_button_width"
+                android:layout_height="@dimen/dialog_button_height"
+                android:paddingLeft="@dimen/dialog_button_magin"
+                android:paddingRight="@dimen/dialog_button_magin"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/dialog_ok"
+                android:text="Cancel"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
